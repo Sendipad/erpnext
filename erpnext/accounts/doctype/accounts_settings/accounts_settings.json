@@ -63,7 +63,6 @@
   "ignore_account_closing_balance",
   "column_break_25",
   "frozen_accounts_modifier",
-  "report_settings_sb",
   "banking_tab",
   "enable_party_matching",
   "enable_fuzzy_matching",
@@ -73,7 +72,9 @@
   "remarks_section",
   "general_ledger_remarks_length",
   "column_break_lvjk",
-  "receivable_payable_remarks_length"
+  "receivable_payable_remarks_length",
+  "section_break_7aaov",
+  "monetary_columns_float_precison"
  ],
  "fields": [
   {
@@ -462,6 +463,18 @@
    "fieldname": "remarks_section",
    "fieldtype": "Section Break",
    "label": "Remarks Column Length"
+  },
+  {
+   "fieldname": "section_break_7aaov",
+   "fieldtype": "Section Break",
+   "label": "Monetary Columns Representation Precison"
+  },
+  {
+   "description": "If This set to 0  the Float Precision will be set to System Setting , So Some Columns where it representing Currency without Symbol will be shown as set here .",
+   "fieldname": "monetary_columns_float_precison",
+   "fieldtype": "Select",
+   "label": "Monetary Columns Float Precison",
+   "options": "\n2\n3\n4\n5\n6\n7\n8\n9"
   }
  ],
  "icon": "icon-cog",
@@ -469,7 +482,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2023-11-20 09:37:47.650347",
+ "modified": "2023-12-29 20:13:33.864068",
  "modified_by": "Administrator",
  "module": "Accounts",
  "name": "Accounts Settings",
